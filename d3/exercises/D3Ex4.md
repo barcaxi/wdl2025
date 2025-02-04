@@ -11,7 +11,7 @@
 
 1.	Import the MySQL database [d3](http://localhost/d3/d3.sql) into XAMMP MySQL Server.  
 
-1.  Setup and run the `d3` node.js project.  Test it works with [http://localhost:3000/data](http://localhost:3000/data)
+1.  Setup and run the `d3` node.js project [here](../d3).  Test it works with [http://localhost:3000/data](http://localhost:3000/data)
 
 1.  Open and understand the code [http://localhost/d3/d3JSON2jq.html](http://localhost/d3/d3JSON2jq.html) that uses the node.js script to retrieve JSON data.
 
