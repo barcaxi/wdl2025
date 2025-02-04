@@ -3,7 +3,7 @@ $(document).ready(function() {
                                .attr("width",300)
                                .attr("height",200);                              
     
-    d3.json("http://localhost/d3/d3JSON2.php").then(function(dataset)
+    d3.json("http://localhost:3000/data").then(function(dataset)
     {
         console.log(dataset);        
         var elements = svg.selectAll("rect")
