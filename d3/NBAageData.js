@@ -7,7 +7,7 @@ window.onload = function() {
 
     var svg = d3.select("svg");
                                
-    d3.json("http://localhost/d3/NBAgetAgeData.php").then(function(dataset)
+    d3.json("http://localhost:3000/NBAgetAgeData").then(function(dataset)
     {
         console.log(dataset); 
 
