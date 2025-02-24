@@ -4,7 +4,7 @@
 
 This will copy some ``leaflet`` code files to your ``htdocs`` folder.  
 
-Go to [this link](/wdl2024/tree/main) and download the repository ZIP file.  Copy the folder ``leaflet`` into your XAMPP ``htdocs`` folder.
+Go to [this link](.) and download the repository ZIP file.  Copy the folder ``leaflet`` into your XAMPP ``htdocs`` folder.
 
 Check your ``htdocs`` folder.  You should have a new folder called ``leaflet`` with some files in it.
 
