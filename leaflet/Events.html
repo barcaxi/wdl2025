@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <style>
+        #map { 
+            width: 600px; 
+            height: 400px;
+        }        
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script>
+    var map = L.map('map').setView([54.95212256082817,-7.7209027774341905], 15);
+                    
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var marker = L.marker([54.95245451, -7.72099947]).addTo(map);
+
+    var circle = L.circle([54.95212256082817, -7.7209027774341905], {
+        color: 'blue',        
+        fillOpacity: 0.25,
+        radius: 150
+    }).addTo(map);
+    
+    var polygon = L.polygon([
+        [54.95054416, -7.72262086],
+        [54.95002867, -7.72192643],
+        [54.94965567, -7.72246566],
+        [54.95023935, -7.72327501]
+    ], {
+        color: 'green',
+        fillOpacity: 0.25,
+    }).addTo(map);    
+
+
+    function onMapClick(e)
+    {
+        alert("You clicked the map at " + e.latlng);    
+    }
+    map.on('click', onMapClick);
+
+    circle.on('mouseover', function(e){
+        circle.setStyle({color: 'red'});
+        L.DomEvent.stopPropagation(e);  // NB: stops event propagating to parent object (map)
+    });
+    circle.on('mouseout', function(e){
+        circle.setStyle({color: 'blue'});
+        L.DomEvent.stopPropagation(e);  // NB: stops event propagating to parent object (map)
+    });
+    
+    polygon.on('click', function(e){
+        console.log(e.latlng);
+        L.DomEvent.stopPropagation(e);  // NB: stops event propagating to parent object (map)
+    });
+
+
+
+</script>
+
+</body>
+</html>

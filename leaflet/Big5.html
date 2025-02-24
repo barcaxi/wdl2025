@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="Big5.js"></script>
+
+    <style>
+        #map { 
+            width: 600px; 
+            height: 400px;
+        }        
+        table, th, td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<h1>Big 5</h1>
+
+<div id="map"></div>
+
+<hr>
+
+<table>
+    <thead>
+        <tr>
+            <th>Stadium</th>
+            <th>Capacity</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Lat</th>
+            <th>Lng</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Narendra Modi Stadium</td>
+            <td>132,000</td>
+            <td>Ahmedabad, Gujarat</td>
+            <td>India</td>
+            <td>23.092</td>
+            <td>72.597</td>
+            <td><button value="23.092,72.597">View</button></td>
+        </tr>
+        <tr>
+            <td>Rungrado 1st of May Stadium</td>
+            <td>114,000</td>
+            <td>Pyongyang</td>
+            <td>North Korea</td>
+            <td>58.376</td>
+            <td>31.159</td>
+            <td><button value="39.049,125.775">View</button></td>
+        </tr>
+        <tr>
+            <td>Michigan Stadium</td>
+            <td>107,601</td>
+            <td>Ann Arbor, Michigan</td>
+            <td>USA</td>
+            <td>42.265</td>
+            <td>-83.748</td>
+            <td><button value="42.265,-83.748">View</button></td>
+        </tr>
+        <tr>
+            <td>Beaver Stadium</td>
+            <td>106,572</td>
+            <td>State College, Pennsylvania</td>
+            <td>USA</td>
+            <td>40.811</td>
+            <td>-77.855</td>
+            <td><button value="40.8113,-77.8550">View</button></td>
+        </tr>
+        <tr>
+            <td>Ohio Stadium</td>
+            <td>102,780</td>
+            <td>Columbus, Ohio</td>
+            <td>USA</td>
+            <td>40.001</td>
+            <td>-83.019</td>
+            <td><button value="40.001,-83.019">View</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<!-- DO NOT add a <script> element here -->
+
+</body>
+</html>
