@@ -4,7 +4,7 @@
 
 This will copy some UnderScore program files to you ``htdocs`` folder.
 
-1.	Download the [UnderScore repository folder](..)
+1.	Download the [UnderScore repository folder](../..)
 
 1.	Copy the `UnderScore` folder into your `htdocs` folder.  
 
