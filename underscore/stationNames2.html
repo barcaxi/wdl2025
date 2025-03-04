@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+<script src="stations.js"></script>
+</head>
+<body>
+<h1>Stations</h1>
+<div id="data"></div>
+<script type="text/javascript">
+   $("document").ready(function() {
+      function printStationData(element,i){
+         $("#data").append(`${i+1} : ${element.name}<br>`);
+      }				
+      _.each(stations, printStationData);
+   });
+</script>	
+</body>
+</html>
