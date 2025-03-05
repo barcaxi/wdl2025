@@ -7,13 +7,19 @@
 <body>
 <h1>Stations</h1>
 <div id="data"></div>
+
 <script type="text/javascript">
    $("document").ready(function() {
+      // alert();
       function printStationData(element,i){
          $("#data").append(`${i+1} : ${element.name}<br>`);
       }				
       _.each(stations, printStationData);
    });
 </script>	
+   
+
 </body>
 </html>
+
+
